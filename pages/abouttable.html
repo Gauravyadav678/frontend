@@ -37,8 +37,18 @@
    }
    tfoot tr
    {
-       background-color: lightslategray !important;
+     
+    background-color: lightslategray !important;
    }
+div.scroll
+{
+    background-color: #00ffff;
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+}
+
+
 </style>
 <body>
   
@@ -103,5 +113,14 @@
         </tr>
         </tfoot>
     </table>
-</body>
+    <div>
+    <p>overflow:scroll</p>
+    <div class="scroll">
+        If you don't set the height of the box, it will grow as large as the content. But if you set a specific height or width of the box and the content inside cannot fit then what will happen. The CSS overflow property is used to overcome this problem. It specifies whether to clip content, render scroll bars, or just display content.
+    </div>
+    <div style="border: 10px solid royalblue;">
+        <p style="border: dotted red; margin: 20 50 10 30;" > hello gaurav how are you</p>
+    </div>
+    
+    
 </html>
